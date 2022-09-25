@@ -403,11 +403,12 @@ footer .footer--icons .footer--icons--content{
 
 @media(max-width: 700px) {
   footer .footer--icons .footer--icons--content{
-    width: 50%;
+    width: 200px;
     margin: 0;
     padding-bottom: 35px;
   }
 }
+
 
 footer .footer--icons .bg--icons{
   background-color: var(--main-color);
