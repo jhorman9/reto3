@@ -1,0 +1,464 @@
+:root {
+  --main-color: #414641;
+  --secondary-color: #4c514c;
+  --alt-color: #7a8a80;
+  --background-color: #f4f6f3;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Utilidades */
+
+.uppercase {
+  text-transform: uppercase;
+  font-size: 25px;
+  color: var(--main-color);
+}
+
+@media (max-width: 343px) {
+  .uppercase {
+    font-size: 20px;
+   }
+}
+
+@media (max-width: 262px) {
+  .uppercase {
+    font-size: 15px;
+   }
+}
+
+body {
+  font-family: "Reem Kufi Fun", sans-serif;
+}
+
+
+
+h1 {
+  color: var(--main-color);
+  font-size: 78px;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+/* Sección hero (header / nav) */
+
+header {
+  margin: 20px;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  background-image: url("https://admincontent.bimobject.com/public/topbanner/805c168b-ea2e-4e37-8721-0457acf14e2f?ver=1654865658");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+@media (max-width: 480px) {
+  header {
+    margin: 10px;
+    width: calc(100% - 20px);
+    height: calc(100vh - 20px);
+    background-position: center center;
+  }
+}
+
+.header-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content h1{
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+@media (max-width:235px) {
+  .header-content h1{
+    font-size: 28px;
+    margin-top: 0;
+  }
+}
+
+header p {
+  color: var(--secondary-color);
+  font-size: 24px;
+}
+
+@media (max-width:400px) {
+  header p{
+    font-size: 15px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width:235px) {
+  header p{
+    font-size: 12px;
+  }
+}
+
+.underline {
+  width: 7%;
+  height: 5px;
+  background-color: var(--alt-color);
+}
+
+@media (max-width: 400px) {
+  .underline:nth-child(2){
+    width: 25%;
+  }
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.desktop-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px 0 40px;
+}
+
+@media (max-width: 480px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .mobile-menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+}
+
+.nav-small {
+  font-size: 10px;
+}
+
+.nav-small a {
+  margin-left: 15px;
+}
+
+.btn {
+  border: 2px solid var(--secondary-color);
+  padding: 5px 10px;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Seccion de articulos */
+main {
+  background-color: var(--background-color);
+  padding: 120px 0;
+}
+
+main div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.article-image {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.article-image img {
+  width: 170%;
+}
+
+.article-content {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  gap: 15px;
+  width: 75%;
+  margin: 40px auto 0 auto;
+}
+
+@media (max-width:700px) {
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .cards-container{
+    width: 97%;
+  }
+}
+
+/* Sección acerca de ... */
+
+.about-section {
+  display: flex;
+}
+
+@media(max-width:700px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.about-section > div {
+  width: 50%;
+}
+
+@media (max-width:700px) {
+  .about-section > div{
+    width: 75%;
+    text-align: justify;
+    margin: auto;
+  }
+}
+
+@media (max-width:400px) {
+  .about-section > div{
+    width: 97%;
+  }
+}
+
+.about-image {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/520bc04fe4b03863c7f8a659/1505965654689-F8EUX5I1PDVT66SJ0UU8/spiritual+gifts.jpg?format=2500w");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+
+
+@media(max-width:700px) {
+  .about-image {
+    width: 50%;
+    height: 200px;
+    margin: auto;
+  }
+}
+
+.about-content {
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width:700px) {
+  .about-content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.subscribe {
+  text-align: center;
+  background-color: #e1e6e0;
+  padding: 125px;
+  color: var(--main-color);
+}
+
+@media (max-width: 400px) {
+  .subscribe{
+    padding: 25% 3%;
+  }
+}
+
+.subscribe h2{
+  margin-top: 0;
+}
+
+@media (max-width:400px) {
+  .subscribe h2{
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width:400px) {
+  .subscribe p{
+    margin-top: 0;
+  }
+}
+
+.subscribe .email{
+  width: 50%;
+  height: 50px;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media(max-width: 700px) {
+  .subscribe .email{
+    width: 100%;
+  }
+}
+
+.subscribe .btn{
+  margin-top: 20px;
+  outline: none;
+  border: 3px solid var(--alt-color);
+  padding: 5px 20px;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 400px) {
+  .subscribe .btn{
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+
+.subscribe .btn:hover{
+  color: white;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-color);
+  width: 100%;
+  height: 250px;
+}
+
+@media(max-width: 700px) {
+  footer{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+footer .footer--icons{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+@media(max-width: 700px) {
+  footer .footer--icons{
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+footer .footer--icons .footer--icons--content{
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+@media(max-width: 700px) {
+  footer .footer--icons .footer--icons--content{
+    width: 50%;
+    margin: 0;
+    padding-bottom: 35px;
+  }
+}
+
+footer .footer--icons .bg--icons{
+  background-color: var(--main-color);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+}
+
+footer .footer--list{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+@media(max-width: 700px) {
+  footer .footer--list{
+    width: 100%;
+    height: 75%;
+    justify-content: center;
+  }
+}
+
+footer .footer--list ul{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+@media(max-width: 700px) {
+  footer .footer--list ul{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+footer .footer--list ul li{
+  list-style: none;
+}
+
+@media(max-width: 700px) {
+  footer .footer--list ul li{
+    margin-top: 20px;
+  }
+}
