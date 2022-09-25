@@ -394,7 +394,7 @@ footer .footer--icons{
 }
 
 footer .footer--icons .footer--icons--content{
-  width: 35%;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -439,7 +439,7 @@ footer .footer--list ul{
   display: flex;
   margin: 0;
   padding: 0;
-  width: 50%;
+  width: 300px;
   justify-content: space-between;
   margin-right: 50px;
 }
